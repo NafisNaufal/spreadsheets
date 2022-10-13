@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <br>
+        <h1>Pengisian Data Kartu Pelajar SMK Negeri 1 Surabaya</h1>
+      <br>
+      <div id="form">
+        <form
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbwlLHklWxNoSswJe5gaAFrWuKfv46w-C8AZm1mn5kvwrXWnSlmg5rAMWCi5lQdZK6Uh3g/exec"
+        >
+          <div class="form-group">
+            <label for="Nama" class="form-label">Nama</label>
+            <input type="text" class="form-control " id="Nama" name="Nama">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="NISN" class="form-label">NISN</label>
+            <input type="text" class="form-control " id="NISN" name="NISN">
+          </div>
+          <br>
+          <div class="form-group">
+            <p class="form-label">Prodi Keahlian</p>
+            <select class="form-select" aria-label="Default select example" name="Prodi Keahlian">
+                <option selected>RPL</option>
+                <option value="1">TKJ</option>
+                <option value="2">MM</option>
+                <option value="3">OTKP</option>
+                <option value="4">AKL</option>
+                <option value="5">BDP</option>
+                <option value="6">PSPT</option>
+                <option value="7">PH</option>
+                <option value="8">DKV</option>
+              </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="TempatLahir" class="form-label">Tempat Lahir</label>
+            <input type="text" class="form-control " id="TempatLahir" name="Tempat Lahir">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="Kelas" class="form-label">Kelas</label>
+            <input type="text" class="form-control " id="Kelas" placeholder="contoh : 11 RPL 2" name="Kelas">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="TanggalLahir" class="form-label">Tanggal Lahir</label><br>
+            <input type="date" class="form-control " id="TanggalLahir" name="Tanggal Lahir">
+          </div>
+          <br>
+          <div class="form-group">
+            <p class="form-label">Jenis Kelamin</p>
+            <input type="radio" id="Pria" name="JenisKelamin" value="Pria" name="Jenis Kelamin">
+            <label for="Pria" class="form-label">Pria</label><br>
+            <input type="radio" id="Wanita" name="JenisKelamin" value="Wanita" name="Jenis Kelamin">
+            <label for="Wanita" class="form-label">Wanita</label><br>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="Alamat" class="form-label">Alamat</label>
+            <input type="text" class="form-control " id="Alamat" name="Alamat">
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Foto background merah berseragam putih (4x6)</label>
+            <input class="form-control" type="file" id="formFile" name="Foto">
+          </div>
+
+          <button type="button" class="btn btn-primary" onclick="send_data()">Submit</button>
+        </form>
+      </div>
+
+      <!-- Optional if you want to give a completion feedback! -->
+      <div id="completion-msg" style="display: none;">
+        Thank you for completing this form!
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
